@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    /* background-size: cover; */
+}
+/* mens navigation bar */
+.mensnavbar{    
+    /* width: 860px; */
+    display: grid;
+    margin: 0 auto;
+    background-color: black;
+    opacity: .9;
+    color: white;
+}
+/* .mensnavbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .2;
+} */
+.mensnavbar ul{
+    list-style: none;
+    margin: 2%;
+}
+.mensnavbar ul li{
+    background: black;
+    width: 170px;
+    border: 1px solid black;
+    line-height: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    column-count: white;
+    font-size: 14px;
+    position: relative;
+    box-sizing: border-box;
+    /* padding-top: 15px; */
+    padding-bottom: 10px;
+}
+.mensnavbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.mensnavbar ul li:hover{
+    color: white;
+    background: black;
+}
+.mensnavbar ul li a:hover{
+    color: black;
+    background: white;
+}
+.mensnavbar ul ul{
+    display: none;
+}
+.mensnavbar ul li:hover >ul{
+    display: block;
+    color: black;
+    background: white;
+}
+/* main body */
+.main{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'left right right right'
+    ;
+}
+#right{
+    grid-area: right;
+    margin-top: 20px;
+}
+#left{
+    grid-area: left;
+    margin-top: 20px;
+}
